@@ -1,0 +1,13 @@
+{
+	"title": "Create the daicchain chain",
+	"description": "This is the proposal to create the consumer chain \"daicchain-1\". Visit https://github.com/DAICers/ics-testnets/tree/main/game-of-chains-2022/daicchain/ for details on this proposal's data and how to join the chain.",
+	"chain_id": "daicchain-1",
+	"initial_height": {
+		"revision_height": 1,
+		"revision_number": 1
+	},
+	"genesis_hash": "0997f6559dafe41f0d3c7528e5c64253f3cef4fa0ee87b5efd24725c62d33e89",
+	"binary_hash": "d0d3ce1a61a6eb92d14ec42a51081f8589adbea57b086e9325968cf2ac4f7db1",
+	"spawn_time": "2022-11-29T17:00:00.000000000Z",
+	"deposit": "1uprov"
+}
