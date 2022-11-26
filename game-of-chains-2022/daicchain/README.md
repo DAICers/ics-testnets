@@ -36,9 +36,7 @@ Binary checksums can differ based on many things to include go, libc, and make v
   * Version: `v0.1.0`
   * SHA256: `d0d3ce1a61a6eb92d14ec42a51081f8589adbea57b086e9325968cf2ac4f7db1`
 
-  ```
-  docker run -it --entrypoint /bin/bash ghcr.io/strangelove-ventures/checksum:v.0.1.0
-  ```
+
   ```
   # run inside docker container.
   git clone https://github.com/DAICers/daicchain.git
