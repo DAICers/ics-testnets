@@ -37,7 +37,7 @@ Binary checksums can differ based on many things to include go, libc, and make v
   * SHA256: `d0d3ce1a61a6eb92d14ec42a51081f8589adbea57b086e9325968cf2ac4f7db1`
 
   ```
-  docker run -v /mnt/e/interchain/demo:/demo -it --entrypoint /bin/bash ghcr.io/strangelove-ventures/checksum:v.0.1.0
+  docker run -it --entrypoint /bin/bash ghcr.io/strangelove-ventures/checksum:v.0.1.0
   ```
   ```
   # run inside docker container.
