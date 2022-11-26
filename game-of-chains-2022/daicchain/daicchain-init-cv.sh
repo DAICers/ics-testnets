@@ -9,10 +9,10 @@ NODE_HOME=~/.daicchain
 NODE_MONIKER=daicchain
 # ***
 
-CHAIN_BINARY_URL='https://github.com/DAICers/ics-testnets/raw/main/game-of-chains-2022/daicchain/daicchaind'
+CHAIN_BINARY_URL='https://github.com/DAICers/ics-testnets/blob/master/game-of-chains-2022/daicchain/daicchaind?raw=true'
 CHAIN_BINARY='daicchaind'
 CHAIN_ID=daicchain-1
-PERSISTENT_PEERS="595923e093cbe11dea4f816b48e87691a614a964@34.82.58.71:26656,595923e093cbe11dea4f816b48e87691a614a964@34.145.117.181:26656"
+PERSISTENT_PEERS="70abe136deb70cc890bc6a09f26deeee7802d7c0@162.55.246.217:26726"
 
 # Install go 1.19.2
 echo "Installing go..."

@@ -69,7 +69,7 @@ The genesis file with was generated using the following settings:
 
 ## Endpoints
 
-* **p2p persistent peers : `changeme`**
+* **p2p persistent peers : `70abe136deb70cc890bc6a09f26deeee7802d7c0@162.55.246.217:26726`**
 * These peers represent the `daic` validator. We are accepting `250` inbound peeers, but please consider sharing your peers in discord, or create a PR to [`peers.txt`](peers.txt)
 
 * Please keep in mind that any validator that does not come online after 67% of the voting power is up and running, is likely to be slashed for downtime, potentially resulting in being jailed (the `signed_blocks_window` parameter is set to `8640`).
