@@ -8,9 +8,9 @@ Contents
 ## Status
 
 * Timeline
-  * 2022-11-29: Spawn time: `2022-11-29T17:00:00.000000000Z`
-  * 2022-11-26: Proposal 17 voting period ends
-  * 2022-11-25: Proposal 17 goes into voting period
+  * 2022-11-29: Spawn time: `2022-11-30T17:00:00.000000000Z`
+  * 2022-11-26: Proposal 18 voting period ends
+  * 2022-11-25: Proposal 18 goes into voting period
   * 2022-11-25: Genesis file without CCV state is generated
 
 `daicchain` will launch as a consumer chain through a governance proposal in the `provider` chain. Read the [Consumer Chain Start Process](/docs/Consumer-Chain-Start-Process.md) page for more details about the workflow.
@@ -27,7 +27,7 @@ The following items will be included in the proposal:
 
 ### Binary
 
-The binary published in this repo is the `daicchaind` binary built using the `DAICers/daicchain` repo tag [v0.1.0](https://github.com/DAICers/daicchain/releases/tag/v0.1.0). You can generate the binary following the [Get Started section](https://github.com/strange-ventures/daicchain/tree/v0.1.0#get-started). 
+The binary published in this repo is the `daicchaind` binary built using the `DAICers/daicchain` repo tag [v0.1.0](https://github.com/DAICers/daicchain/releases/tag/v0.1.0). You can generate the binary following the [Get Started section](https://github.com/DAICers/daicchain/tree/v0.1.0#get-started). 
 
 ### Verify Binary Checksum.
 Binary checksums can differ based on many things to include go, libc, and make versions. To get a consistent checksum you can use something like docker to verify.
@@ -64,12 +64,12 @@ The genesis file with was generated using the following settings:
 * Denom: `udaic`
 * Signed blocks window: `"8640"`
 * Genesis accounts were added to provide funds for a faucet and a relayer that will be run by the testnet coordinators.
-* Genesis file **without CCV state**: [`daicchain-fresh-genesis.json`](daicchain-fresh-genesis.json), SHA256: `0997f6559dafe41f0d3c7528e5c64253f3cef4fa0ee87b5efd24725c62d33e89`
+* Genesis file **without CCV state**: [`daicchain-fresh-genesis.json`](daicchain-fresh-genesis.json), SHA256: `83d3d8f4805ec93b1b9fad79272e5b14eaef3c3d7f796f92a82b5e34782848c5`
   * **This is provided only for verification, this is not the genesis file validators should be running their nodes with.**
 
 ## Endpoints
 
-* **p2p persistent peers : `595923e093cbe11dea4f816b48e87691a614a964@34.82.58.71:26656,595923e093cbe11dea4f816b48e87691a614a964@34.145.117.181:26656`**
+* **p2p persistent peers : `changeme`**
 * These peers represent the `daic` validator. We are accepting `250` inbound peeers, but please consider sharing your peers in discord, or create a PR to [`peers.txt`](peers.txt)
 
 * Please keep in mind that any validator that does not come online after 67% of the voting power is up and running, is likely to be slashed for downtime, potentially resulting in being jailed (the `signed_blocks_window` parameter is set to `8640`).
