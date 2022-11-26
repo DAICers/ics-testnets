@@ -33,7 +33,7 @@ chmod +x $HOME/go/bin/$CHAIN_BINARY
 # echo "Installing build-essential..."
 # sudo apt install build-essential -y
 # rm -rf daicchain
-# git clone https://github.com/strange-ventures/daicchain.git
+# git clone https://github.com/DAICers/daicchain.git
 # cd daicchain
 # git checkout tags/v0.1.0
 # make install

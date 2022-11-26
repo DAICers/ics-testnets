@@ -9,9 +9,9 @@ Contents
 
 * Timeline
   * 2022-11-29: Spawn time: `2022-11-30T17:00:00.000000000Z`
-  * 2022-11-26: Proposal 18 voting period ends
-  * 2022-11-25: Proposal 18 goes into voting period
-  * 2022-11-25: Genesis file without CCV state is generated
+  * 2022-11-28: Proposal 18 voting period ends
+  * 2022-11-26: Proposal 18 goes into voting period
+  * 2022-11-26: Genesis file without CCV state is generated
 
 `daicchain` will launch as a consumer chain through a governance proposal in the `provider` chain. Read the [Consumer Chain Start Process](/docs/Consumer-Chain-Start-Process.md) page for more details about the workflow.
 
