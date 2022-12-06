@@ -49,7 +49,6 @@ Binary checksums can differ based on many things to include go, libc, and make v
   git clone https://github.com/DAICers/dchain-ics
   cd dchain-ics
   git fetch
-  git checkout v0.1.0
   make install
   sha256sum ~/go/bin/dchaind
   ```
