@@ -8,12 +8,12 @@ Contents
 ## Status
 
 * Timeline
-  * 2022-11-30: Spawn time: `2022-11-30T17:00:00.000000000Z`
-  * 2022-11-28: Proposal 20 voting period ends
-  * 2022-11-26: Proposal 20 goes into voting period
-  * 2022-11-26: Genesis file without CCV state is generated
+  * 2022-12-09: Spawn time: `2022-12-09T12:00:00.000000000Z`
+  * 2022-12-09: Proposal 20 voting period ends
+  * 2022-12-06: Proposal 20 goes into voting period
+  * 2022-12-06: Genesis file without CCV state is generated
 
-`daicchain` will launch as a consumer chain through a governance proposal in the `provider` chain. Read the [Consumer Chain Start Process](/docs/Consumer-Chain-Start-Process.md) page for more details about the workflow.
+`dchain` will launch as a consumer chain through a governance proposal in the `provider` chain. Read the [Consumer Chain Start Process](/docs/Consumer-Chain-Start-Process.md) page for more details about the workflow.
 
 The following items will be included in the proposal:
 * Genesis file hash
@@ -27,26 +27,26 @@ The following items will be included in the proposal:
 
 ### Binary
 
-The binary published in this repo is the `daicchaind` binary built using the `DAICers/daicchain` repo tag [v0.1.0](https://github.com/DAICers/daicchain/releases/tag/v0.1.0). You can generate the binary following the [Get Started section](https://github.com/DAICers/daicchain/tree/v0.1.0#get-started). 
+The binary published in this repo is the `dchaind` binary built using the `DAICers/dchaind-ics` repo tag [v0.1.0](https://github.com/DAICers/dchain-ics/releases/tag/v0.1.0). You can generate the binary following the [Get Started section](https://github.com/DAICers/dchain-ics/tree/v0.1.0#get-started). 
 
 ### Verify Binary Checksum.
 Binary checksums can differ based on many things to include go, libc, and make versions. To get a consistent checksum you can use something like docker to verify.
 
-  * [Linux amd64 build](daicchaind)
+  * [Linux amd64 build](dchaind)
   * Version: `v0.1.0`
-  * SHA256: `d0d3ce1a61a6eb92d14ec42a51081f8589adbea57b086e9325968cf2ac4f7db1`
+  * SHA256: `c069fe4c5b730eb68e0eec4f0205a8d5be75eafddb24bb764892d8af54efbf74`
 
 
   ```
   # run inside docker container.
-  git clone https://github.com/DAICers/daicchain.git
-  cd daicchain
+  git clone https://github.com/DAICers/dchain-ics
+  cd dchain-ics
   git fetch
   git checkout v0.1.0
   make install
-  sha256sum ~/go/bin/daicchaind
+  sha256sum ~/go/bin/dchaind
   ```
-  expected return `d0d3ce1a61a6eb92d14ec42a51081f8589adbea57b086e9325968cf2ac4f7db1`
+  expected return `c069fe4c5b730eb68e0eec4f0205a8d5be75eafddb24bb764892d8af54efbf74`
 
 ### Genesis file
 
@@ -58,8 +58,8 @@ Final genesis file **with CCV state**: **`pending spawn time`**
 
 The genesis file with was generated using the following settings:
 
-* Chain ID: `daicchain-1`
-* Denom: `udaic`
+* Chain ID: `dchain`
+* Denom: `data`
 * Signed blocks window: `"8640"`
 * Genesis accounts were added to provide funds for a faucet and a relayer that will be run by the testnet coordinators.
 * Genesis file **without CCV state**: [`daicchain-fresh-genesis.json`](daicchain-fresh-genesis.json), SHA256: `83d3d8f4805ec93b1b9fad79272e5b14eaef3c3d7f796f92a82b5e34782848c5`
