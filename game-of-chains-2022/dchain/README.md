@@ -1,4 +1,4 @@
-# daicchain Chain Information
+# dchain Chain Information
 
 Contents
 
@@ -8,7 +8,7 @@ Contents
 ## Status
 
 * Timeline
-  * 2022-12-09: Spawn time: `2022-12-09T12:00:00.000000000Z`
+  * 2022-12-09: Spawn time: `2022-12-09T14:00:00.000000000Z`
   * 2022-12-09: Proposal 20 voting period ends
   * 2022-12-06: Proposal 20 goes into voting period
   * 2022-12-06: Genesis file without CCV state is generated
@@ -36,6 +36,13 @@ Binary checksums can differ based on many things to include go, libc, and make v
   * Version: `v0.1.0`
   * SHA256: `c069fe4c5b730eb68e0eec4f0205a8d5be75eafddb24bb764892d8af54efbf74`
 
+  Example of using a volume mount to get the binary outside of the container onto your ubuntu server.
+
+  ```
+  #run on your ubuntu server
+  # use the `realpath` for the volume mount.
+  docker run -v /home/ubuntu/go/bin:/root/go/bin -it --entrypoint /bin/bash ghcr.io/strangelove-ventures/checksum:v.0.1.0
+  ```
 
   ```
   # run inside docker container.
@@ -62,13 +69,13 @@ The genesis file with was generated using the following settings:
 * Denom: `data`
 * Signed blocks window: `"8640"`
 * Genesis accounts were added to provide funds for a faucet and a relayer that will be run by the testnet coordinators.
-* Genesis file **without CCV state**: [`daicchain-fresh-genesis.json`](daicchain-fresh-genesis.json), SHA256: `83d3d8f4805ec93b1b9fad79272e5b14eaef3c3d7f796f92a82b5e34782848c5`
+* Genesis file **without CCV state**: [`dchain-fresh-genesis.json`](dchain-fresh-genesis.json), SHA256: `d66a72254ec281e673c56546c1f82569c0e57bd1c87465781e82dc976c63924e`
   * **This is provided only for verification, this is not the genesis file validators should be running their nodes with.**
 
 ## Endpoints
 
 * **p2p persistent peers : `70abe136deb70cc890bc6a09f26deeee7802d7c0@162.55.246.217:26726`**
-* These peers represent the `daic` validator. We are accepting `250` inbound peeers, but please consider sharing your peers in discord, or create a PR to [`peers.txt`](peers.txt)
+* These peers represent the `dchain` validator. We are accepting `250` inbound peeers, but please consider sharing your peers in discord, or create a PR to [`peers.txt`](peers.txt)
 
 * Please keep in mind that any validator that does not come online after 67% of the voting power is up and running, is likely to be slashed for downtime, potentially resulting in being jailed (the `signed_blocks_window` parameter is set to `8640`).
 
@@ -78,23 +85,23 @@ On the node machine:
 - Copy the `node_key.json` and `priv_validator_key.json` files for your validator.
   - **These should be the same ones as the ones from your provider node**.
 - Run one of the following scripts:
-  - daicchain service: [daicchain-init.sh](daicchain-init.sh)
-  - Cosmovisor service: [daicchain-init-cv.sh](daicchain-init-cv.sh)
+  - daicchain service: [dchain-init.sh](dchain-init.sh)
+  - Cosmovisor service: [dchain-init-cv.sh](dchain-init-cv.sh)
 - Wait until the spawn time is reached and the genesis file with the CCV states is available.
 - Overwrite the genesis file with the one that includes the CCV states.
-  - The default location is `$HOME/.daicchain/config/genesis.json`.
+  - The default location is `$HOME/.dchain/config/genesis.json`.
 - Enable and start the service:
-  - daicchain
+  - dchain
     ```
-    sudo systemctl enable daicchain
-    sudo systemctl start daicchain
+    sudo systemctl enable dchain
+    sudo systemctl start dchain
     ```
   - Cosmovisor
     ```
-    sudo systemctl enable cv-daicchain
-    sudo systemctl start cv-daicchain
+    sudo systemctl enable cv-dchain
+    sudo systemctl start cv-dchain
     ```
 - To follow the log, use:
-  - daicchain: `journalctl -fu daicchain`
-  - Cosmovisor: `journalctl -fu cv-daicchain`
+  - daicchain: `journalctl -fu dchain`
+  - Cosmovisor: `journalctl -fu cv-dchain`
 - If the log does not show up right away, run `systemctl restart systemd-journald`.
