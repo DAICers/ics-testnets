@@ -5,13 +5,13 @@
 # You should only have to modify the values in this block
 PRIV_VALIDATOR_KEY_FILE=~/priv_validator_key.json
 NODE_KEY_FILE=~/node_key.json
-NODE_HOME=~/.daicchain
-NODE_MONIKER=daicchain
+NODE_HOME=~/.dchain
+NODE_MONIKER=dchain
 # ***
 
-CHAIN_BINARY_URL='https://github.com/DAICers/ics-testnets/blob/master/game-of-chains-2022/daicchain/daicchaind?raw=true'
-CHAIN_BINARY='daicchaind'
-CHAIN_ID=daicchain-1
+CHAIN_BINARY_URL='https://github.com/DAICers/ics-testnets/blob/master/game-of-chains-2022/dchain/daicchaind?raw=true'
+CHAIN_BINARY='dchaind'
+CHAIN_ID=dchain
 PERSISTENT_PEERS="70abe136deb70cc890bc6a09f26deeee7802d7c0@162.55.246.217:26726"
 
 # Install go 1.19.2
@@ -22,7 +22,7 @@ sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.19.2.linux-amd64.ta
 export PATH=$PATH:/usr/local/go/bin
 
 # Install chain binary
-echo "Installing daicchain..."
+echo "Installing dchain..."
 mkdir -p $HOME/go/bin
 
 # Download Linux amd64,
@@ -33,7 +33,7 @@ chmod +x $HOME/go/bin/$CHAIN_BINARY
 # echo "Installing build-essential..."
 # sudo apt install build-essential -y
 # rm -rf daicchain
-# git clone https://github.com/DAICers/daicchain.git
+# git clone https://github.com/DAICers/dchain-ics.git
 # cd daicchain
 # git checkout tags/v0.1.0
 # make install

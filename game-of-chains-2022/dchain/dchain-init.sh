@@ -57,7 +57,7 @@ sudo rm /etc/systemd/system/$NODE_MONIKER.service
 sudo touch /etc/systemd/system/$NODE_MONIKER.service
 
 echo "[Unit]"                               | sudo tee /etc/systemd/system/$NODE_MONIKER.service
-echo "Description=daicchain service"       | sudo tee /etc/systemd/system/$NODE_MONIKER.service -a
+echo "Description=dchain service"       | sudo tee /etc/systemd/system/$NODE_MONIKER.service -a
 echo "After=network-online.target"          | sudo tee /etc/systemd/system/$NODE_MONIKER.service -a
 echo ""                                     | sudo tee /etc/systemd/system/$NODE_MONIKER.service -a
 echo "[Service]"                            | sudo tee /etc/systemd/system/$NODE_MONIKER.service -a
