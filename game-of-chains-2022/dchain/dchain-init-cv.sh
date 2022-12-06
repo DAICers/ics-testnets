@@ -32,10 +32,9 @@ chmod +x $HOME/go/bin/$CHAIN_BINARY
 # or install from source
 # echo "Installing build-essential..."
 # sudo apt install build-essential -y
-# rm -rf daicchain
+# rm -rf dchain-ics
 # git clone https://github.com/DAICers/dchain-ics.git
-# cd daicchain
-# git checkout tags/v0.1.0
+# cd dchain-ics
 # make install
 
 export PATH=$PATH:$HOME/go/bin
