@@ -79,7 +79,7 @@ echo "Setting up paths for go..."
 echo "export PATH=$PATH:/usr/local/go/bin" >> .profile
 
 echo "***********************"
-echo "After you have updated the genesis file, start the daicchain service:"
+echo "After you have updated the genesis file, start the dchain service:"
 echo "sudo systemctl enable $NODE_MONIKER.service"
 echo "sudo systemctl start $NODE_MONIKER.service"
 echo "And follow the log with:"
